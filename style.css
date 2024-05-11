@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 400px)
+
+    {
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+    html {
+        font-size: 10px;
+        font-family: "Quicksand", sans-serif;
+
+    }
+
+    #grilla {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "titulo titulo"
+            "imagen imagen"
+            "titulo1 titulo1"
+            "calidad calidad"
+            "contenido contenido"
+            "pregunta pregunta"
+            "cursoguiado cursoindividual"
+            "imagenbutton imagenbutton"
+            "footer footer";
+        height: 100vh;
+        grid-template-rows: 25vh 25vh 45vh 25vh 45vh 25vh 30vh 55vh 25vh;
+    }
+    
+    header {
+        grid-area: header;
+        background-color: white;
+        display: flex;
+        padding-top: 4rem;
+    
+    }
+
+    header .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 55%;
+    }
+    
+    header .logo a {
+        display: flex;
+        justify-content: center;
+    }
+    
+    header .logo img {
+        width: 42%;
+    }
+    
+    header main {
+        width: 65%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    header main ul,
+    footer main ul {
+        display: inline-block;
+    }
+    
+    header main ul li,
+    footer main ul li {
+        display: inline-block;
+        font-size: 2.5rem;
+        padding-inline-start: 2rem;
+        padding-inline-end: 2rem;
+        border-right-width: 0.3rem;
+        border-right-style: solid;
+        border-right-color: violet;
+    }
+    
+    header main ul li a,
+    footer main ul li a {
+        text-decoration: none;
+        color: rgb(48, 46, 46);
+    }
+    
+    .noBorder {
+        border-right: none !important;
+    }
+    
+    .titulo {
+        grid-area: titulo;
+        align-content: center;
+        text-align: center;
+        font-size: 2.8rem;
+        color: rgb(48, 46, 46);
+    
+    }
+    
+    .inicio {
+        grid-area: imagen;
+        background-image: url(./imagenes/pexels-olly-826349.jpg);
+        background-size: 200rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0rem -40rem;
+        background-blend-mode: multiply;
+    }
+    
+    .titulo1 {
+        grid-area: titulo1;
+        
+    }
+    
+    .titulo1,
+    .texto3 {
+        align-content: center;
+        text-align: center;
+        font-size: 2.5rem;
+        color: rgb(48, 46, 46);
+    
+    }
+    
+    .texto1,
+    .texto2,
+    .texto4,
+    .texto5 {
+        grid-area: calidad;
+        text-align: center;
+        font-size: 2.3rem;
+        padding-inline: 4rem;
+    }
+    
+    .pieDeFoto {
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+    
+    .icono {
+        font-size: 6rem;
+        color: #2f2d34;
+    }
+    
+    .texto2 {
+        grid-area: contenido;
+    
+    }
+    
+    .texto3 {
+        grid-area: pregunta;
+    }
+    
+    .imagen {
+        grid-area: imagen1;
+        background-image: url(./imagenes/pexels-karolina-grabowska-5387260.jpg);
+        background-size: 75rem;
+        background-position: 0rem -15rem;
+        background-repeat: no-repeat;
+    }
+    
+    .texto4 {
+        grid-area: cursoguiado;
+    
+    }
+    
+    .texto5 {
+        grid-area: cursoindividual;
+    }
+    
+    .boton {
+        grid-area: imagenbutton;
+        background-image: url(./imagenes/ultima\ foto.jpg);
+        background-size: cover;
+        back
+    }
+    
+    footer {
+        grid-area: footer;
+        font-size: 2.8rem;
+        color: rgb(48, 46, 46);
+        display: flex;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    footer p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+    
+    
+    footer main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+}
+
+
+
+
+
+
+
+------
+
+html {
+    font-size: 10px;
+    font-family: "Quicksand", sans-serif;
+}
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "titulo titulo"
+        "imagen imagen"
+        "titulo1 titulo1"
+        "calidad contenido"
+        "pregunta pregunta"
+        "cursoguiado cursoindividual"
+        "imagenbutton imagenbutton"
+        "footer footer";
+    height: 100vh;
+    grid-template-rows: 25vh 25vh 45vh 25vh 45vh 25vh 30vh 55vh 25vh;
+}
+
+header {
+    grid-area: header;
+    background-color: white;
+    display: flex;
+    padding-top: 4rem;
+
+}
+
+header .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+}
+
+header .logo a {
+    display: flex;
+    justify-content: center;
+}
+
+header .logo img {
+    width: 42%;
+}
+
+header main {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header main ul,
+footer main ul {
+    display: inline-block;
+}
+
+header main ul li,
+footer main ul li {
+    display: inline-block;
+    font-size: 2.5rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+    border-right-width: 0.3rem;
+    border-right-style: solid;
+    border-right-color: violet;
+}
+
+header main ul li a,
+footer main ul li a {
+    text-decoration: none;
+    color: rgb(48, 46, 46);
+}
+
+.noBorder {
+    border-right: none !important;
+}
+
+.titulo {
+    grid-area: titulo;
+    align-content: center;
+    text-align: center;
+    font-size: 2.8rem;
+    color: rgb(48, 46, 46);
+
+}
+
+.inicio {
+    grid-area: imagen;
+    background-image: url(./imagenes/pexels-olly-826349.jpg);
+    background-size: 200rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0rem -40rem;
+    background-blend-mode: multiply;
+}
+
+.titulo1 {
+    grid-area: titulo1;
+    background: rgb(220, 231, 115);
+    background: linear-gradient(90deg, rgba(220, 231, 115, 1) 0%, rgba(221, 124, 157, 1) 52%, rgba(207, 155, 241, 1) 100%);
+}
+
+.titulo1,
+.texto3 {
+    align-content: center;
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(48, 46, 46);
+
+}
+
+.texto1,
+.texto2,
+.texto4,
+.texto5 {
+    grid-area: calidad;
+    text-align: center;
+    font-size: 2.3rem;
+    padding-inline: 4rem;
+}
+
+.pieDeFoto {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.icono {
+    font-size: 6rem;
+    color: #2f2d34;
+}
+
+.texto2 {
+    grid-area: contenido;
+
+}
+
+.texto3 {
+    grid-area: pregunta;
+}
+
+.imagen {
+    grid-area: imagen1;
+    background-image: url(./imagenes/pexels-karolina-grabowska-5387260.jpg);
+    background-size: 75rem;
+    background-position: 0rem -15rem;
+    background-repeat: no-repeat;
+}
+
+.texto4 {
+    grid-area: cursoguiado;
+
+}
+
+.texto5 {
+    grid-area: cursoindividual;
+}
+
+.boton {
+    grid-area: imagenbutton;
+    background-image: url(./imagenes/ultima\ foto.jpg);
+    background-size: cover;
+    back
+}
+
+footer {
+    grid-area: footer;
+    font-size: 2.8rem;
+    color: rgb(48, 46, 46);
+    display: flex;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+
+footer main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
