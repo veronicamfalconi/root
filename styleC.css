@@ -10,20 +10,16 @@ html {
     font-size: 10px;
 }
 
-#grilla {
+#grillaC {
     display: grid;
     grid-template-areas:
         "header header"
         "titulo titulo"
         "imagen imagen"
-        "titulo1 titulo1"
-        "calidad calidad"
-        "contenido contenido"
-        "pregunta pregunta"
-        "cursoguiado cursoindividual"
-        "imagenbutton imagenbutton"
+        "texto texto"
+        "formulario formulario"
         "footer footer";
-    grid-template-rows: 8.84% 6.63% 10.06% 3.53% 11.87% 11.38% 4.95% 9.90% 5.63% 4.53%;
+    grid-template-rows: 8.84% 6.63% 10.06% 5.87% 30.38% 4.53%;
     /* grid-template-rows: 20vh 15vh 25vh 8vh 28vh 25vh 10vh 22vh 15vh 8vh; */
     gap: 0.5rem;
     padding: 1rem;
@@ -79,80 +75,76 @@ main ul li {
     height: 100%;
 }
 
+/* estilo de la imagen post titulo */
+
 .inicio {
     grid-area: imagen;
     padding: 0;
-    background-image: url(./imagenes/pexels-olly-826349.jpg);
+    background-image: url(./imagenes/contacto.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: -8rem;
+    background-position-y: -27rem;
     height: 100%;
 }
 
-.titulo1 {
-    grid-area: titulo1;
-    display: grid;
-    text-align: center;
-    align-items: center;
+.contacto {
+    grid-area: texto;
+}
+
+.contacto p {
+    font-size: 1.4rem;
+}
+
+/* estilo del formulario */
+.formulario {
+    grid-area: formulario;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.fieldset {
     font-size: 1.2rem;
-    height: 100%;
-    text-transform: uppercase;
+    border: 0.1rem solid gray;
+    padding: 2rem;
+    margin-bottom: 2rem;
 }
 
-.texto1 {
-    grid-area: calidad;
+.legend {
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 
-.texto2 {
-    grid-area: contenido;
+.formGroup {
+    margin-bottom: 1.2rem;
 }
 
-.texto3 {
-    grid-area: pregunta;
-    display: grid;
-    text-align: center;
-    align-items: center;
-    font-size: 1.2rem;
-    height: 100%;
-    text-transform: uppercase;
+label {
+    display: block;
 }
 
-.texto4 {
-    grid-area: cursoguiado;
-
+.input,
+textarea {
+    width: 100%;
+}
+.input:focus{
+    background-color: rgb(226, 223, 223);
+}
+textarea:focus{
+    background-color: rgb(226, 223, 223);
 }
 
-.texto1,
-.texto2,
-.texto4,
-.texto5 {
-    text-align: center;
-    font-size: 1.3rem;
-    padding-inline: 2rem;
-    height: 100%;
+.enviar {
+    padding: 1rem 2rem;
+    background-color: rgb(220, 231, 115, 1);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
 }
 
-.pieDeFoto {
-    font-size: 2.5rem;
-    padding-bottom: 0.5rem;
-}
-
-.icono {
-    font-size: 4.5rem;
-    color: #2f2d34;
-}
-
-.texto5 {
-    grid-area: cursoindividual;
-}
-
-.boton {
-    display: grid;
-    grid-area: imagenbutton;
-    background-image: url(./imagenes/ultima\ foto.jpg);
-    background-size: cover;
-    height: 100%;
+.enviar:hover{
+    background-color: rgb(221, 124, 157, 1);
+    border: 0.1rem solid rgb(221, 124, 157, 1);
 }
 
 footer {
@@ -173,7 +165,6 @@ footer .mainFooter {
 footer .mainFooter ul {
     display: flex;
     display: inline-block;
-
 }
 
 footer .mainFooter ul li {
@@ -202,23 +193,21 @@ footer .mainFooter ul li a {
         font-family: "Quicksand", sans-serif;
     }
 
-    #grilla {
+    #grillaC {
         display: grid;
         grid-template-areas:
-            "header header"
-            "titulo titulo"
-            "imagen imagen"
-            "titulo1 titulo1"
-            "calidad contenido"
-            "pregunta pregunta"
-            "cursoguiado cursoindividual"
-            "imagenbutton imagenbutton"
-            "footer footer";
-        height: 100vh;
-        grid-template-rows: 35vh 25vh 35vh 20vh 45vh 30vh 35vh 35vh 200vh;
-        gap: 0.5rem;
+            "header"
+            "titulo"
+            "imagen"  
+            "texto"
+            "formulario" 
+            "footer";
+            grid-template-rows: 35vh 25vh 25vh 15vh 85vh 25vh;
+        /* grid-template-rows: 20vh 15vh 25vh 8vh 28vh 25vh 10vh 22vh 15vh 8vh; */
+        gap: 1rem;
         padding: 1rem;
         align-items: center;
+        height: 100vh;
     }
 
     header {
@@ -288,82 +277,84 @@ footer .mainFooter ul li a {
 
     }
 
+    /* estilo de la imagen post titulo */
+
     .inicio {
         grid-area: imagen;
-        background-image: url(./imagenes/pexels-olly-826349.jpg);
-        background-size: 200rem;
+        padding: 0;
+        background-image: url(./imagenes/contacto.jpg);
+        background-size: 100%;
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 0rem -40rem;
-        background-blend-mode: multiply;
+        background-position: center;
+        background-position-y: -67rem;
+        height: 100%;
     }
 
-    .titulo1 {
-        grid-area: titulo1;
+    .contacto {
+        grid-area: texto;
+        width: 80%;
+        margin: 0 auto;
     }
 
-    .titulo1,
-    .texto3 {
-        align-content: center;
-        text-align: center;
-        font-size: 2.5rem;
-        color: rgb(48, 46, 46);
-
+    .contacto p {
+        font-size: 1.8rem;
     }
 
-    .texto1,
-    .texto2,
-    .texto4,
-    .texto5 {
-        grid-area: calidad;
-        text-align: center;
-        font-size: 2.3rem;
-        padding-inline: 4rem;
+    /* estilo del formulario */
+    .formulario {
+        grid-area: formulario;
+        width: 80%;
+        margin: 0 auto;
     }
 
-    .pieDeFoto {
-        font-size: 3rem;
-        padding-bottom: 2rem;
+    .fieldset {
+        font-size: 1.8rem;
+        border: 0.1rem solid gray;
+        padding: 2rem;
+        margin-bottom: 2rem;
     }
 
-    .icono {
-        font-size: 6rem;
-        color: #2f2d34;
+    .legend {
+        font-size: 1.6rem;
+        font-weight: bold;
     }
 
-    .texto2 {
-        grid-area: contenido;
-
+    .formGroup {
+        margin-bottom: 1.4rem;
     }
 
-    .texto3 {
-        grid-area: pregunta;
+    label {
+        display: block;
     }
 
-    .imagen {
-        grid-area: imagen1;
-        background-image: url(./imagenes/pexels-karolina-grabowska-5387260.jpg);
-        background-size: 75rem;
-        background-position: 0rem -15rem;
-        background-repeat: no-repeat;
+    .input,
+    textarea {
+        width: 100%;
+        /* height: 2rem; */
     }
 
-    .texto4 {
-        grid-area: cursoguiado;
-
+    .input :focus{
+        background-color: rgb(226, 223, 223);
     }
 
-    .texto5 {
-        grid-area: cursoindividual;
+    textarea:focus{
+        background-color: rgb(226, 223, 223);
     }
 
-    .boton {
-        grid-area: imagenbutton;
-        background-image: url(./imagenes/ultima\ foto.jpg);
-        background-size: cover;
+    .enviar {
+        padding: 1rem 2rem;
+        background-color: rgb(220, 231, 115, 1);
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+    }
+    
+    .enviar:hover{
+        background-color: rgb(221, 124, 157, 1);
+        border: 0.1rem solid rgb(221, 124, 157, 1);
     }
 
-    .footer {
+    footer {
         grid-area: footer;
         font-size: 2.8rem;
         color: rgb(48, 46, 46);
@@ -371,10 +362,9 @@ footer .mainFooter ul li a {
         display: block;
         align-items: center;
         justify-content: center;
-        padding: 1rem;
     }
 
-    .footer p {
+    footer p {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -382,7 +372,7 @@ footer .mainFooter ul li a {
     }
 
 
-    .footer main {
+    footer main {
         display: flex;
         align-items: center;
         justify-content: center;
