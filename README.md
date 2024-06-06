@@ -1,0 +1,2 @@
+El proyecto está realizado en HTML, estructurado en CSS y utiliza la librería Bootstrap y animate para los efectos visuales. Una de las mayores dificultades presentadas fue el uso de grids en conjunto con bootstrap, ya que parte del código deja de estar incluido dentro del grids.
+Una de las posibles mejores del proyecto es la reutilización del código, ya tanto el encabezado como el footer se repiten en cada página
