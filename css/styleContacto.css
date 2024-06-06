@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilos para el cuerpo de la página */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.textoGrande{
+    font-size: 3rem;
+}
+
+.navbar-nav li a:hover {
+    text-decoration: none;
+    color: white!important;
+    background-color: rgb(207, 137, 164);
+    color: white;
+    border-radius: 5%;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+
+.navbar-brand:hover{
+    animation-name: pulse;
+    animation-duration: 2s;
+}
+
+
+.navbar-nav li a:active {
+    text-decoration: none;
+    color: hotpink;
+}
+
+/* Estilos para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.fieldset {
+    font-size: 1.2rem;
+    border: 0.1rem solid gray;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.legend {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.formGroup {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+}
+
+.input,
+textarea {
+    width: 100%;
+}
+
+.input:focus {
+    background-color: rgb(226, 223, 223);
+}
+
+textarea:focus {
+    background-color: rgb(226, 223, 223);
+}
+
+.enviar {
+    padding: 1rem 1rem;
+    background-color: rgb(220, 231, 115, 1);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color: rgb(221, 124, 157, 1);
+    border: 0.1rem solid rgb(221, 124, 157, 1);
+}
+
+/* Estilos del footer */
+
+.footer {
+    grid-area: footer;
+}
+
+.subFooter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* grids */
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "sidebar"
+        "content"
+        "footer";
+    gap: 2rem;
+    padding: 2rem;
+    flex: 1;
+}
+
+.content {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    grid-area: content;
+}
+
+.sidebar {
+    border-radius: 5px;
+    grid-area: sidebar;
+}
+
+
+
+/* Estilos responsivos */
+@media (min-width: 992px) {
+    main {
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+            "sidebar content content"
+            "footer footer footer";
+    }
+}

@@ -1,116 +1,190 @@
 <!DOCTYPE html>
 <html lang="es">
 <!-- Inicio del head -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todas tus clases</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/1e3d4ac892.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/animate.css">
 </head>
-<!-- Inicio del body -->
+
+
 <body>
-    <!-- Grids -->
-    <div id="grilla">
-        <header>
-            <div class="logo">
-                <a href="./index.html">
-                    <img src="./imagenes/Todas tus clases (1).png" alt="Logo">
-                </a>
-            </div>
-            <main>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="">Cursos</a></li>
-                    <li><a href="">Acerca de mi</a></li>
-                    <li class="noBorder"><a href="./contacto.html">Contacto</a></li>
+    <!-- comienzo de la barra de navegación -->
+    <nav class="navbar navbar-light bg-light bg-body navbar-expand-lg px-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./imagenes/todastusclases.png" class="img-fluid" alt="Logo"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item fs-5">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item fs-5">
+                        <a class="nav-link active" aria-current="page" href="./html/cursos.html">Cursos</a>
+                    </li>
+
+                    <li class="nav-item fs-5">
+                        <a class="nav-link active" aria-current="page" href="./html/contacto.html">Acerca de mi</a>
+                    </li>
+
+                    <li class="nav-item fs-5">
+                        <a class="nav-link active" aria-current="page" href="./html/contacto.html">Contacto</a>
+                    </li>
+
                 </ul>
-            </main>
-        </header>
-        <div class="titulo">
-            <h1>Aprender Español Online</h1>
-        </div>
 
-        <div class="inicio">
+            </div>
         </div>
+    </nav>
 
-        <div class="titulo1">
-            <h2>5 niveles de español para aprender a tu ritmo</h2>
+    <!-- comienzo del titulo principal -->
+
+    <div class="container-fluid">
+
+        <div class="row text-center text-dark border-0">
+            <h1 class="animate__animated animate__heartBeat">Aprender Español Online</h1>
+            <h2 class="">de manera fácil y eficaz</h2>
         </div>
-
-        <div class="texto1">
-            <div class="icono"><i class="fa-solid fa-medal"></i></div>
-            <div class="pieDeFoto">Calidad</div>
-            <div class="textoFoto">
-                <p>Nuestros cursos están diseñados para hacer que aprender español sea dinámico e intuitivo. Están
-                    desarrollados por docentes expertos con más de diez años de experiencia, lo que garantiza una
-                    enseñanza de alta calidad y adaptada a las necesidades individuales de los estudiantes.</p>
+        <!-- comienzo de bienvenida -->
+        <div class="row seccionFondoFijo">
+            <div class="col p-3">
+                <div class="card text-center bg-transparent border border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fs-1 fw-semibold">¡Bienvenidos!</h5>
+                        <p class="card-text fs-2 fw-semibold">Todas tus clases es un espacio dedicado a todos aquellos
+                            que quieran
+                            aprender o mejorar el
+                            español y conocer la cultura hispanohablante.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- comienzo de seccion de explicación -->
+        <div class="row p-5">
+            <div class="col text-center border-bottom border-3 p-3 fs-1">
+                <h2 class="text-warning">5 niveles de español para aprender a tu ritmo</h2>
             </div>
         </div>
 
-        <div class="texto2">
-            <div class="icono"><i class="fa-solid fa-cloud"></i></div>
-            <div class="pieDeFoto">Contenido</div>
-            <div class="textoFoto">
-                <p>Ofrecemos cursos de español con acceso a lecciones adaptadas a cada nivel. Nuestros cursos incluyen
-                    clases explicativas, ejercicios, videos y sesiones de aprendizaje en vivo optativas, diseñados para
-                    garantizar un progreso efectivo en el dominio del idioma.
-                </p>
+        <div class="row">
+            <div class="col-xs-12 col-lg-6">
+                <div class="card text-center text-lg-end border border-0">
+                    <i class="bi bi-award card-img-top" alt="Award"></i>
+                    <div class="card-body">
+                        <h5 class="card-title fs-2 animate__animated animate__slideInLeft text-danger">Calidad</h5>
+                        <p class="card-text fs-5 lh-base p-0 animate__animated animate__slideInLeft"><em>Nuestros cursos
+                                están diseñados para hacer que aprender
+                                español sea
+                                dinámico e intuitivo. Están
+                                desarrollados por docentes expertos con más de diez años de experiencia, lo que
+                                garantiza
+                                una
+                                enseñanza de alta calidad y adaptada a las necesidades individuales de los
+                                estudiantes.</em></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-6">
+                <div class="card text-center text-lg-start border border-0">
+                    <i class="bi bi-collection-play card-img-top" alt="Play"></i>
+                    <div class="card-body">
+                        <h5 class="card-title fs-2 animate__animated animate__slideInRight text-danger">Contenido</h5>
+                        <p class="card-text fs-5 lh-base p-0 animate__animated animate__slideInRight"><em>Ofrecemos
+                                cursos
+                                de español con acceso a lecciones
+                                adaptadas a cada nivel.
+                                Nuestros cursos incluyen
+                                clases explicativas, ejercicios, videos y sesiones de aprendizaje en vivo optativas,
+                                diseñados para
+                                garantizar un progreso efectivo en el dominio del idioma.</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- comienzo de sección de modalidad -->
+        <div class="row text-center p-3 fs-1">
+            <div class="col p-3 text-warning border-bottom border-3">
+                <h2>¿Cómo aprendo en la plataforma de todas tus clases?</h2>
             </div>
         </div>
 
-        <div class="texto3">
-            <h2>¿Cómo aprendo en la plataforma de todas tus clases?</h2>
-        </div>
-
-        <div class="texto4">
-            <div class="icono"><i class="fa-solid fa-chalkboard-user"></i></div>
-            <div class="pieDeFoto">Curso guiado</div>
-            <div class="textoFoto">
-                <p>Curso guiado por un docente en etapas lógicas a para alcanzar el nivel.
-                </p>
+        <div class="row">
+            <div class="col-6">
+                <div class="card text-end border border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fs-2">Curso guiado</h5>
+                        <p class="card-text fs-5 lh-base p-0"><em>Curso guiado por un docente en etapas lógicas a para
+                                alcanzar el nivel.</em></p>
+                        <a href="#" class="btn btn-primary">Ir al curso guiado</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card mb-3 border border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fs-2">Curso individual</h5>
+                        <p class="card-text fs-5 lh-base p-0"><em>Curso para elegir el tema que desea aprender y
+                                continuarlo
+                                a tu propio ritmo.</em></p>
+                        <a href="#" class="btn btn-primary">Ir al curso individual</a>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="texto5">
-            <div class="icono"><i class="fa-solid fa-laptop"></i></div>
-            <div class="pieDeFoto">Curso individual</div>
-            <div class="textoFoto">
-                <p>Curso donde podes elegir el tema que desea aprender, a tu ritmo.
-                </p>
+        <div class="footer bg-light p-1">
+            <div class="subFooter p-3">
+                <h5>¡Te esperamos!</h5>
+                <button type="button" value="Únete hoy" class="enviar h6">Unete hoy</button>
             </div>
+            <div class="subFooter">
+                <div class="iconos">
+                    <button type="button" class="btn btn-dark">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg>
+                    </button>
+                    <button type="button" class="btn btn-dark">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path
+                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                        </svg>
+                    </button>
+                </div>
+                <p class="h6">© 2024 Todas tus clases ES | FR | IT | EN</p>
+            </div>
+
         </div>
 
-        <div class="boton">
-            <a href="">PONER UN BOTÓN!!!!!!!!!!!!</a>
-        </div>
-
-        <footer class="footer">
-            <div class="mainFooter">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="">Cursos</a></li>
-                    <li><a href="">Acerca de mi</a></li>
-                    <li class="noBorder"><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="textoFinal">
-                <p>© 2024 Todas tus clases ES | FR | IT | EN</p>
-            </div>
-            
-        </footer>
-    </div>
-    <!-- fin de Grids -->
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script> -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+        </script>
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
 </body>
 
 </html>

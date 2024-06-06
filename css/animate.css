@@ -1,0 +1,10 @@
+.slideInLeft{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+.slideInLeft.active{
+    opacity: 1;
+
+}

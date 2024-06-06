@@ -17,7 +17,7 @@ html {
 }
 
 .seccionFondoFijo {
-    background-image: url(./imagenes/fondobsas.png);
+    background-image: url(../imagenes/fondobsas.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,3 +75,4 @@ html {
     background-color: rgb(221, 124, 157, 1);
     border: 0.1rem solid rgb(221, 124, 157, 1);
 }
+
